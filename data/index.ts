@@ -75,7 +75,7 @@ export const projects = [
     title: "Advanced E-Commerce Website",
     des: "A comprehensive platform featuring admin, consumer, rider, and seller panels for a seamless e-commerce experience.",
     img: "/chiltel.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/mongo.svg", "/stripe.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/mongo.svg", "/stripe.png"],
     link: "https://www.chiltel.com/",
   },
   {
@@ -83,11 +83,19 @@ export const projects = [
     title: "Yorigin - Open Source Platform for Programmers",
     des: "An open-source, free site to help programmers, showcasing the incredible work of our development team.",
     img: "/Yorigin.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/node.svg", "/mongo.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/node.png", "/mongo.svg"],
     link: "http://www.yorigin.in/",
   },
   {
     id: 3,
+    title: "XelleratesAI",
+    des: "An MVP for a venture solution firm that connects startups and investors with innovative features.",
+    img: "/xellerates.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/node.png", "/mongo.svg"],
+    link: "https://xellerates-ai.vercel.app/",
+  },
+  {
+    id: 4,
     title: "DevBlog - AI-Powered Blog Generator",
     des: "An innovative website that generates high-quality blogs using advanced AI capabilities.",
     img: "/Devblog.png",
@@ -95,29 +103,22 @@ export const projects = [
     link: "https://ai-blog-nu.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "AI SEO Enhancer",
     des: "An AI-powered tool designed to optimize website SEO and boost organic traffic.",
     img: "/seo.png",
     iconLists: ["/next.svg", "/tail.svg", "/openai.svg", "/gsap.svg", "/ts.svg"],
     link: "https://seo-tool-rosy.vercel.app/",
   },
-  {
-    id: 5,
-    title: "XelleratesAI",
-    des: "An MVP for a venture solution firm that connects startups and investors with innovative features.",
-    img: "/p5.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/node.svg", "/mongo.svg"],
-    link: "/ui.xelleratesai.com",
-  },
-  {
-    id: 6,
-    title: "AI Sales Tracking Chatbot",
-    des: "A smart AI chatbot that tracks sales and generates responses based on user queries.",
-    img: "/p6.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/openai.svg", "/node.svg", "/mongo.svg"],
-    link: "/ui.saleschatbot.com",
-  },
+  
+  // {
+  //   id: 6,
+  //   title: "AI Sales Tracking Chatbot",
+  //   des: "A smart AI chatbot that tracks sales and generates responses based on user queries.",
+  //   img: "/p6.svg",
+  //   iconLists: ["/next.svg", "/tail.svg", "/openai.svg", "/node.svg", "/mongo.svg"],
+  //   link: "/ui.saleschatbot.com",
+  // },
 ];
 
 

@@ -1,11 +1,19 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
-
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
+  const handleClick = (link) => {
+    window.open(link, '_blank', 'noopener,noreferrer');
+  };
+
+  const truncateTitle = (title) => {
+    const words = title.split(' ');
+    return words.slice(0, 2).join(' '); // Takes only first 2 words
+  };
+
   return (
     <div className="py-20">
       <h1 className="heading">
@@ -17,22 +25,28 @@ const RecentProjects = () => {
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
+            onClick={() => handleClick(item.link)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                handleClick(item.link);
+              }
+            }}
+            style={{ cursor: 'pointer' }}
           >
-            <PinContainer
-              title="Checkout"
-              href="https://www.linkedin.com/in/blackstocks/"
-            >
+            <PinContainer title={truncateTitle(item.title)}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <img src="/bg.png" alt="bgimg" className="w-full h-full object-cover" />
                 </div>
                 <img
                   src={item.img}
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
+                  alt={item.title}
+                  className="z-10 absolute bottom-0 w-auto h-auto max-w-full max-h-full"
                 />
               </div>
 
@@ -60,7 +74,7 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <img src={icon} alt={`tech-icon-${index}`} className="p-2" />
                     </div>
                   ))}
                 </div>
