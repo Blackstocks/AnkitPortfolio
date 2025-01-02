@@ -5,13 +5,13 @@ import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
-  const handleClick = (link) => {
-    window.open(link, '_blank', 'noopener,noreferrer');
+  const handleClick = (link: string) => {
+    window.open(link, "_blank", "noopener,noreferrer");
   };
 
-  const truncateTitle = (title) => {
-    const words = title.split(' ');
-    return words.slice(0, 2).join(' '); // Takes only first 2 words
+  const truncateTitle = (title: string) => {
+    const words = title.split(" ");
+    return words.slice(0, 2).join(" ");
   };
 
   return (
@@ -29,11 +29,11 @@ const RecentProjects = () => {
             role="button"
             tabIndex={0}
             onKeyDown={(e) => {
-              if (e.key === 'Enter' || e.key === ' ') {
+              if (e.key === "Enter" || e.key === " ") {
                 handleClick(item.link);
               }
             }}
-            style={{ cursor: 'pointer' }}
+            style={{ cursor: "pointer" }}
           >
             <PinContainer title={truncateTitle(item.title)}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
@@ -41,7 +41,11 @@ const RecentProjects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" className="w-full h-full object-cover" />
+                  <img
+                    src="/bg.png"
+                    alt="bgimg"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <img
                   src={item.img}
@@ -74,7 +78,11 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt={`tech-icon-${index}`} className="p-2" />
+                      <img
+                        src={icon}
+                        alt={`tech-icon-${index}`}
+                        className="p-2"
+                      />
                     </div>
                   ))}
                 </div>
