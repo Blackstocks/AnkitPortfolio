@@ -229,13 +229,17 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/Blackstocks",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/link.svg",
+    link: "https://www.linkedin.com/in/blackstocks/",
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/twit.svg",
+    link: "https://x.com/blackstocks2107",
   },
+  
 ];

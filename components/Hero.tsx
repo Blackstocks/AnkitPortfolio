@@ -57,7 +57,7 @@ const Hero = () => {
             Hi! I&apos;m Ankit Kumar Soni, a Full-Stack Developer based in India, passionate about building scalable and innovative web applications
           </p>
 
-          <a href="#">
+          <a href="#projects">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
