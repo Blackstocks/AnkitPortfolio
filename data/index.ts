@@ -124,10 +124,22 @@ export const projects = [
 
 export const testimonials = [
   {
-    quote:
-      "Working with Adrian was an extraordinary experience. His commitment to excellence, responsiveness, and passion for development truly elevated our project. Adrian's innovative ideas and dedication to quality make him an exceptional partner for any venture.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: "Working with Ankit on our financial platform was exceptional. His product management skills shine through in how he balanced technical requirements with user needs. The React-based dashboard he developed handles millions of transactions daily with 99.9% uptime.",
+    name: "Sudarshan Raut",
+    title: "Founder at Chiltel India Private Limited",
+    image: "#",
+  },
+  {
+    quote: "Ankit's expertise in Kubernetes and Docker transformed our deployment pipeline. He implemented a microservices architecture that reduced our deployment time by 70% and significantly improved our system's scalability. His ability to handle complex technical challenges is remarkable.",
+    name: "Kaushik Neogi",
+    title: "CEO at KNEOGIN IGMISARCH PRIVATE LIMITED",
+    image: "/kaushik.png",
+  },
+  {
+    quote: "Ankit's full-stack development skills combined with product management expertise helped us launch our MVP in record time. The scalable architecture he designed using Next.js and containerized microservices has supported our growth phenomenally.",
+    name: "Akshat Srivastava",
+    title: "Startup Founder & CTO of DEVLAUNCH",
+    image: "/akshat.png",
   },
 ];
 
@@ -162,34 +174,52 @@ export const companies = [
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
   },
+  // {
+  //   id: 6,
+  //   name: "AuthO",
+  //   img: "/autho.png",
+  //   nameImg: "/authO.png",
+  // },
 ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineering Intern",
-    desc: "Contributed to dynamic web platform development using React.js.",
+    title: "Senior Software Engineer",
+    company: "KNEOGIN IGMISARCH",
+    duration: "2022 - Present",
+    desc: "Leading development of enterprise-scale applications with microservices architecture. Implemented CI/CD pipelines using Docker & Kubernetes, reducing deployment time by 40%. Architected solutions handling 10K+ daily users.",
+    technologies: ["Next.js", "TypeScript", "Docker", "Kubernetes", "AWS"],
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Developer - JSM Tech",
-    desc: "Developed innovative mobile apps for iOS and Android using React Native.",
+    title: "Full Stack Developer",
+    company: "Chiltel India",
+    duration: "2021 - 2022",
+    desc: "Developed and shipped a comprehensive e-commerce platform with admin, consumer, and seller panels. Implemented real-time analytics dashboard processing 1K+ daily transactions. Reduced server costs by 30% through optimized architecture.",
+    technologies: ["React", "Node.js", "MongoDB", "Redis", "AWS"],
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance Mobile App Architect",
-    desc: "Led app development from concept to deployment, exceeding client expectations.",
+    title: "Technical Product Manager",
+    company: "DEVLAUNCH",
+    duration: "2020 - 2021",
+    desc: "Led cross-functional teams in developing and launching MVPs for startups. Architected scalable solutions using microservices and containerization. Successfully delivered 5 major products with 98% client satisfaction rate.",
+    technologies: ["Next.js", "Docker", "Kubernetes", "PostgreSQL", "Azure"],
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Visionary",
-    desc: "Spearheaded user-centric feature development using cutting-edge technologies.",
+    title: "Software Development Team Lead",
+    company: "Freelance Consultant",
+    duration: "2019 - 2020",
+    desc: "Provided technical leadership for complex projects across multiple industries. Implemented cloud-native solutions and DevOps practices. Mentored junior developers and established development best practices.",
+    technologies: ["React", "Node.js", "AWS", "Docker", "MongoDB"],
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
